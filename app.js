@@ -22,10 +22,10 @@ navigator.geolocation.getCurrentPosition(position => {
                   response.json().then(({data}) => {
              document.querySelector('#cityName').innerHTML = data[0].city_name;
             console.log(data);
-                        document.querySelector('#temp').innerHTML = "<i class='fas fa-thermometer-three-quarters'></i>" + data[0].temp;
-                        document.querySelector('#humidity').innerHTML = "<i class='fas fa-tint'></i>" + data[0].rh;
+                        document.querySelector('#temp').innerHTML = "<i class='fas fa-thermometer-three-quarters'></i></br>" + data[0].temp;
+                        document.querySelector('#humidity').innerHTML = "<i class='fas fa-tint'></i></br></br>" + data[0].rh;
 
-                        document.querySelector('#wind').innerHTML = "<i class='fas fa-wind'></i>" + data[0].wind_spd;
+                        document.querySelector('#wind').innerHTML = "<i class='fas fa-wind'></i></br>" + data[0].wind_spd;
                   })
               
             )
@@ -65,10 +65,10 @@ fetch(`https://geohub3.p.rapidapi.com/cities/search/${ville}?pageSize=10&page=1`
                   response.json().then(({data}) => {
              document.querySelector('#cityName').innerHTML = data[0].city_name;
             console.log(data);
-                        document.querySelector('#temp').innerHTML = "<i class='fas fa-thermometer-three-quarters'></i>" + data[0].temp;
-                        document.querySelector('#humidity').innerHTML = "<i class='fas fa-tint'></i>" + data[0].rh;
+                        document.querySelector('#temp').innerHTML = "<i class='fas fa-thermometer-three-quarters'></i></br>" + data[0].temp;
+                        document.querySelector('#humidity').innerHTML = "<i class='fas fa-tint'></i></br>" + data[0].rh;
 
-                        document.querySelector('#wind').innerHTML = "<i class='fas fa-wind'></i>" + data[0].wind_spd;
+                        document.querySelector('#wind').innerHTML = "<i class='fas fa-wind'></i></br>" + data[0].wind_spd;
                   })
               
             )
