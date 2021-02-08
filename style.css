@@ -4,7 +4,7 @@
 
 html {
       font-size: 62.5%;
-      box-sizing:border-box;
+      box-sizing: border-box;
 }
 
 body {
@@ -17,28 +17,28 @@ body {
       background-size: cover;
 }
 
-main{
-      min-height:100vh;
+main {
+      min-height: 100vh;
 }
 
 .flexContainer {
       display: flex;
-      flex-flow:column;
+      flex-flow: column;
       justify-content: center;
       align-items: center;
-      flex:1 0 90%;
+      flex: 1 0 90%;
 }
 
 #entre {
       padding: 3rem 1.5rem;
-      display:flex;
-      justify-content:center;
+      display: flex;
+      justify-content: center;
 }
 
-@media(min-width:780px){
-     #entre { 
-      width:50%;
-      margin:0 auto;
+@media(min-width:780px) {
+      #entre {
+            width: 50%;
+            margin: 0 auto;
       }
 }
 
@@ -69,85 +69,85 @@ main{
       margin: 1rem 0 0;
       padding: 0;
       color: #fff;
-      cursor:pointer;
+      cursor: pointer;
 }
 
 
 #details {
-      display:flex;
+      display: flex;
       flex-flow: row wrap;
       width: 95%;
       margin: 5rem auto 0;
 }
 
 #details .content {
-      padding:0 1rem;
-      height:200px;
-     flex:0 1 calc(100% - 2rem);
-      margin:1rem 0;
-}
-
-#details .content i{
-      font-size:3rem;
-}
-
-@media (min-width:480px){
-#details .content {
-      padding:0 1rem;
-      flex: 0 0 calc(50% - 2rem);
+      padding: 0 1rem;
       height: 200px;
-      margin:0;
-}
-}
-
-@media (min-width:780px){
-      #details .content {
-      flex: 0 0 calc(50% - 6rem);
-      margin:2rem;
-      }
-      
-      #details {
-      flex-flow: row wrap;
-      }
+      flex: 0 1 calc(100% - 2rem);
+      margin: 1rem 0;
 }
 
-@media (min-width:1400px){
-      
+#details .content i {
+      font-size: 3rem;
+}
+
+@media (min-width:480px) {
       #details .content {
-            flex: 0 1 calc( 25% - 6rem);
+            padding: 0 1rem;
+            flex: 0 0 calc(50% - 2rem);
+            height: 200px;
+            margin: 0;
       }
-      
+}
+
+@media (min-width:780px) {
+      #details .content {
+            flex: 0 0 calc(50% - 6rem);
+            margin: 2rem;
+      }
+
       #details {
-      flex-flow: row wrap;
-      width: 80%;
+            flex-flow: row wrap;
+      }
+}
+
+@media (min-width:1400px) {
+
+      #details .content {
+            flex: 0 1 calc(25% - 6rem);
+      }
+
+      #details {
+            flex-flow: row wrap;
+            width: 80%;
       }
 }
 
 #cityBox {
-      background-color:rgba(41,128,185,0.75)
+      background-color: rgba(41, 128, 185, 0.75)
 }
 
-#cityName{
-      display:flex;
-      flex-flow:row wrap;
-      width:100%;
-      text-align:center;
-      justify-content:center;
-      font-size:2rem;
+#cityName {
+      display: flex;
+      flex-flow: row wrap;
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+      font-size: 2rem;
       font-weight: bold;
 }
 
 
 #temp {
-      background-color:rgba(43,78,101,0.75)
+      background-color: rgba(43, 78, 101, 0.75)
 }
 
 #humidity {
-      background-color:rgba(52,152,219,0.75)
+      background-color: rgba(52, 152, 219, 0.75)
 }
 
 #wind {
-      background-color:rgba(143,146,154,0.75)
+      background-color: rgba(143, 146, 154, 0.75)
 }
 
 #weather {
