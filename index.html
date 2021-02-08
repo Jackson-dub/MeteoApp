@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <title>Appli météo</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="https://kit.fontawesome.com/e4d5cbf9bb.js" crossorigin="anonymous"></script>
+       
+       
+      
+</head>
+
+<body>
+      <main>
+            <div class="flexContaine" id="entre">
+                  <form>
+                        <input type="text" id="inputCity" placeholder="Ville"
+                        class="flexContainer" >
+
+                        <button type="submit" class="flexContainer">Rechercher</button>
+                  </form>
+            </div>
+            
+            <div class="flexContainer" id="details">
+                  <div class="flexContainer content" id="cityBox">
+                       <div id="cityName"></div>
+                        <div>Longitude : <span id="long"></span><br>Latitude : <span id="lat"></span></div>
+                  </div>
+                  <div class="flexContainer content" id="temp"></div>
+                  <div class="flexContainer content" id="humidity"></div>
+                  <div class="flexContainer content" id="wind"></div>
+            </div>
+            <div class="flexContaine" id="weather"></div>
+      </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
