@@ -96,26 +96,47 @@ window.addEventListener('load', () => {
                   //Récupère les éléments dynamique dans le DOM 
                   let animation = document.querySelectorAll('#anim img');
                   let canvas = document.querySelector('#weather');
-                  let bg = document.querySelectorAll('#weather svg');
+                  let bg =document.querySelectorAll('#weather svg');
                   
-                  
+                  console.log(bg);
                   // Adapte les animations en fonction du temps
                   
                   switch (data[0].weather.description) {
                   case 'Soleil':
                         animation[0].style.display = 'block';
+                        animation[1].style.display = 'none';
+                        animation[2].style.display = 'none';
+                        animation[3].style.display = 'none';
+                        bg[2].style.display = 'none';
+                        bg[1].style.display = 'none';
+                        bg[0].style.display = 'none';
                         break
-                  case 'neige':
+                  case  'Neige légère':
                         animation[1].style.display = 'block';
+                        animation[0].style.display = 'none';
+                        animation[2].style.display = 'none';
+                        animation[3].style.display = 'none';
                         bg[0].style.display = 'block';
+                        bg[1].style.display = 'none';
+                        bg[2].style.display = 'none';
                         break
                   case 'pluie':
                        animation[2].style.display = 'block';
-                              bg[1].style.display = 'block';
+                        bg[1].style.display = 'block';
+                        bg[2].style.display = 'none';
+                        bg[0].style.display = 'none';
+                        animation[3].style.display = 'none';
+                        animation[0].style.display = 'none';
+                        animation[1].style.display = 'none';
                         break
                   default:
-                   animation[3].style.display = 'block';
-                              bg[2].style.display = 'block';
+                        animation[3].style.display = 'block';
+                        bg[2].style.display = 'block';
+                        bg[1].style.display = 'none';
+                        bg[0].style.display = 'none';
+                        animation[0].style.display = 'none';
+                        animation[2].style.display = 'none';
+                        animation[1].style.display = 'none';
                         return
             }
 
