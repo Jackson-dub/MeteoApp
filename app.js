@@ -104,19 +104,18 @@ window.addEventListener('load', () => {
                   switch (data[0].weather.description) {
                   case 'Soleil':
                         animation[0].style.display = 'block';
-                        
                         break
                   case 'neige':
                         animation[1].style.display = 'block';
-                        bd[0].style.display = 'block';
+                        bg[0].style.display = 'block';
                         break
                   case 'pluie':
                        animation[2].style.display = 'block';
-                              bd[1].style.display = 'block';
+                              bg[1].style.display = 'block';
                         break
                   default:
                    animation[3].style.display = 'block';
-                              bd[2].style.display = 'block';
+                              bg[2].style.display = 'block';
                         return
             }
 
