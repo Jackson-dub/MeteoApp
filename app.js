@@ -129,6 +129,15 @@ window.addEventListener('load', () => {
                         animation[0].style.display = 'none';
                         animation[1].style.display = 'none';
                         break
+                        case 'Forte pluie':
+                              animation[2].style.display = 'block';
+                               bg[1].style.display = 'block';
+                               bg[2].style.display = 'none';
+                               bg[0].style.display = 'none';
+                               animation[3].style.display = 'none';
+                               animation[0].style.display = 'none';
+                               animation[1].style.display = 'none';
+                               break
                   default:
                         animation[3].style.display = 'block';
                         bg[2].style.display = 'block';
